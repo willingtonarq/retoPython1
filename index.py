@@ -1,4 +1,4 @@
-
+git 
 
 """
 Este programa permite leer la edad y peso de una persona y
@@ -15,7 +15,7 @@ print(f"Peso: {peso} kg")
 
 """2. Escribir un programa que calcule el área de un triángulo recibiendo como
 entrada el valor de base y altura. Área= base*altura/2"""
-# Leer la base y la altura del triángulo
+# Leer la base y la altura del triángddulo
 base = float(input("Ingrese la base del triángulo: "))
 altura = float(input("Ingrese la altura del triángulo: "))
 # Calcular el área del triángulo
