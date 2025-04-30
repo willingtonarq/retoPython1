@@ -1,0 +1,27 @@
+horasTrabajadas = float(input("Ingrese el numero de horas trabajadas: "))
+precioHora = float(input("Ingrese el precio por hora: "))
+
+if horasTrabajadas <= 35:
+    salarioBruto = horasTrabajadas * precioHora
+else:
+    horasNormales = 35
+    horasExtra = horasTrabajadas - 35
+    salarioBruto = (horasNormales * precioHora) + (horasExtra * precioHora * 1.25)
+
+
+salarioMensual = salarioBruto * 4
+
+
+if salarioMensual < 1000:
+    impuestos = 0
+elif salarioMensual <= 2000:
+    impuestos = salarioBruto * 0.20
+else:
+    impuestos = salarioBruto * 0.30
+
+
+salarioNeto = salarioBruto - impuestos
+
+print(f"\nSalario bruto semanal: {salarioBruto:.2f}")
+print(f"Impuestos semanales: {impuestos:.2f}")
+print(f"Salario neto semanal: {salarioNeto:.2f}")
