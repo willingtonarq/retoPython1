@@ -161,6 +161,18 @@ else:
 
 
 """Diseñar un programa que lea un número entero y determine si es positivo, negativo"""
+# o cero.
+# Leer un número entero
+numero = int(input("Ingrese un número entero: "))
+# Verificar si el número es positivo, negativo o cero
+if numero > 0:
+    print(f"{numero} es un número positivo.")
+elif numero < 0:
+    print(f"{numero} es un número negativo.")
+else:
+    print(f"{numero} es cero.")     
+    
+
 
 
 
