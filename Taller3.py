@@ -65,12 +65,14 @@ print("El valor total a pagar por las horas extras trabajadas es:", total_pago)
 
 # 7. Calcular y visualizar la suma y el producto de los números pares comprendidos entre
 # 20 y 400 ambos inclusive.
+
 for i in range(20, 401):
     if i % 2 == 0:
         suma = 0
-        suma += i
         producto = 1
-        producto *= i
+        suma = suma + i
+        producto = producto * i 
+
 print("La suma de los números pares entre 20 y 400 es:", suma)
 print("El producto de los números pares entre 20 y 400 es:", producto)
 
