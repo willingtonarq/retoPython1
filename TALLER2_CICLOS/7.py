@@ -12,6 +12,7 @@ producto = 1
 print(f"La suma de los números pares es: {suma}")
 print(f"El producto de los números pares es: {producto}")
  """
+
 # CICLO WHILE
 
 numero = 20

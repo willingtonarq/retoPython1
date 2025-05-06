@@ -3,11 +3,9 @@ dando al usuario tres intentos, e informando si adivino o fallo. (ciclos + condi
 
 import random
 
-# Número preestablecido entre 1 y 10
 numero_preestablecido = random.randint(1, 10)
-
-# Dar al usuario tres intentos
 intentos = 3
+adivino = False
 
 print("Adivina el número entre 1 y 10. Tienes 3 intentos.")
 
@@ -17,6 +15,7 @@ print("Adivina el número entre 1 y 10. Tienes 3 intentos.")
     intento = int(input("Ingresa tu número: "))
     if intento == numero_preestablecido:
         print("¡Felicidades! Adivinaste el número.")
+        
         break
     else:
         intentos -= 1
@@ -27,13 +26,13 @@ print("Adivina el número entre 1 y 10. Tienes 3 intentos.")
 
 # CICLO FOR
 
-for intento in range(1, 4):  # 3 intentos
+for intento in range(1, 4):
     numero = int(input(f"Intento {intento}/3 - Adivina el número (1 al 10): "))
 
     if numero == numero_preestablecido:
         print("¡Felicidades! Adivinaste el número.")
         adivino = True
-        break  # Sale del ciclo si adivinó
+        break
     else:
         print("Incorrecto.")
 
