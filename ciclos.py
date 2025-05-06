@@ -223,3 +223,42 @@ if contador > 0:
 else:
     print("No se ingresaron números positivos.")
 # Usando for
+suma = 0
+contador = 0
+for i in range(100):  # Limitar a 100 intentos
+    numero = int(input("Ingrese un número positivo (0 para salir): "))
+    # Verificar si el número es 0 o negativo
+    if numero <= 0:
+        break
+    # Sumar el número y aumentar el contador
+    suma += numero
+    contador += 1
+
+
+"""10. Escriba un algoritmo que genere y muestre la tabla de multiplicar de un número entero
+positivo dado por el usuario."""
+
+# Leer el número entero positivo
+numero = int(input("Ingrese un número entero positivo: "))
+# Verificar que el número sea positivo
+if numero > 0:
+    # Generar y mostrar la tabla de multiplicar
+    print(f"Tabla de multiplicar del {numero}:")
+    for i in range(1, 11):
+        resultado = numero * i
+        print(f"{numero} x {i} = {resultado}")
+else:
+    print("Error: El número debe ser positivo.")
+# Usando while
+numero = int(input("Ingrese un número entero positivo: "))
+# Verificar que el número sea positivo
+if numero > 0:
+    # Generar y mostrar la tabla de multiplicar
+    print(f"Tabla de multiplicar del {numero}:")
+    i = 1
+    while i <= 10:
+        resultado = numero * i
+        print(f"{numero} x {i} = {resultado}")
+        i += 1
+else:
+    print("Error: El número debe ser positivo.")
