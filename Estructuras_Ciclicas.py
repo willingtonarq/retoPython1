@@ -178,12 +178,30 @@ intentos = 3
 for i in range(intentos):
     intento = int(input("Adivina el numero entre 1 y 10: "))
     if intento == numero_secreto:
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         print("¡Adivinaste!")
         break
     else:
         print("Intenta de nuevo")
 else:
     print(f"Lo siento, el numero era {numero_secreto}")
+
 
 
 # while
@@ -265,3 +283,16 @@ while i <= 11:
 
 
 
+intentos = 3
+numero_secreto = random.randint(1, 10)
+while intentos > 0:
+    intento = int(input("Adivina el numero entre 1 y 10: "))
+    if intento == numero_secreto:
+        print("¡Adivinaste!")
+        break
+    else:
+        intentos -= 1
+        print(f"Intenta de nuevo. Te quedan {intentos} intentos.")
+
+else:
+        print(f"Lo siento, el numero era {numero_secreto}")
